@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qOKIU3/YczU=",
+  "success": true,
+  "projectFilePath": "/Users/verma/Projects/Docker Https/WeatherAPI/WeatherAPI.csproj",
+  "expectedPackageFiles": [
+    "/Users/verma/.nuget/packages/microsoft.aspnetcore.openapi/9.0.2/microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
+    "/Users/verma/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

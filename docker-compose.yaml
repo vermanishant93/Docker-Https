@@ -1,0 +1,19 @@
+version: '3'
+services: 
+  weatherapi:
+    build: WeatherAPI/
+    ports:
+    - "8000:8080"
+    - "8081:443"
+    environment:
+      ASPNETCORE_URLS: "https://+;http://+"
+      ASPNETCORE_HTTPS_PORT: "8081"
+      ASPNETCORE_ENVIRONMENT: Development
+    volumes:
+      #For Windows
+      # - ${APPDATA}\microsoft\UserSecrets\:/root/.microsoft/usersecrets
+      # - ${USERPROFILE}\.aspnet\https:/root/.aspnet/https/ 
+
+      #For Mac
+      - $HOME/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+      - $HOME/.aspnet/https:/root/.aspnet/https:ro
